@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplication"
+        android:padding="20dp"
+        android:layout_margin="15dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/multiplication"
+        android:background="@drawable/background"
+        />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekbar"
+        android:padding="20dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/seekbar"
+        android:layout_below="@+id/multiplication"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="@drawable/multiplication"
+        android:padding="20dp"
+        android:layout_margin="15dp"
+        android:id="@+id/listview"
+        android:layout_below="@+id/seekbar"/>
+
+
+
+</RelativeLayout>
